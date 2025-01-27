@@ -78,6 +78,16 @@ services:
     volumes:
       - "./data:/home/data"
 
+  react-frontend:
+    image: front-image
+    ports:
+      - "4000:80" 
+    networks:
+      app_net:
+        ipv4_address: 172.20.0.15
+    env_file:
+        - .env  
+
 networks:
   app_net:
     driver: bridge
