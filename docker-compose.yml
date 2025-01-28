@@ -79,7 +79,7 @@ services:
       - "./data:/home/data"
 
   react-frontend:
-    image: front-image
+    image: kicper231/front-image:latest
     ports:
       - "4000:80" 
     networks:
