@@ -1,6 +1,6 @@
 @echo off
-echo Włączanie programu....
+echo Wlaczanie programu....
 docker-compose down
 docker-compose up -d
-echo Program został włączony!
+echo Program zostal wlaczony!
 pause
